@@ -32,8 +32,6 @@ public static class ConfigureServices
     public static IServiceCollection AddDataContext(
         this IServiceCollection services, ConfigurationManager configuration)
     {
-        // services.AddDbContext<EfCoreContext>(options => options.UseSqlite("Data Source=../CA.Infrastructure/template.db"));
-
         var connectionString = configuration.GetConnectionString("DefaultConnection");
         services.AddDbContext<EfCoreContext>(options => options.UseSqlServer(connectionString));
 
