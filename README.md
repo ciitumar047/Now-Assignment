@@ -1,12 +1,19 @@
 dotnet new sln -n Assignment
+
 dotnet new webapi -n Assignment.Api
+
 dotnet new classlib -n Assignment.Application
+
 dotnet new classlib -n Assignment.Domain
+
 dotnet new classlib -n Assignment.Infrastructure
 
 dotnet sln Assignment.sln add Assignment.Api/Assignment.Api.csproj
+
 dotnet sln Assignment.sln add Assignment.Application/Assignment.Application.csproj
+
 dotnet sln Assignment.sln add Assignment.Domain/Assignment.Domain.csproj
+
 dotnet sln Assignment.sln add Assignment.Infrastructure/Assignment.Infrastructure.csproj
 
 Assignment.Api
